@@ -6,4 +6,4 @@
 
 ## Lagu paTa
 
-<iframe width ="923" height ="500" src="https://www.youtube.com/watch?reload=9&v=H2hCFDoSkPc&t=4s&skip_registered_account_check=true" ></iframe>
+<iframe width="922" height="500" src="https://www.youtube.com/embed/H2hCFDoSkPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
