@@ -89,12 +89,12 @@
               >
               <span>Variables</span>
           </li>
-          <li class="tool-list">
+          <li class="tool-list" title="Play/Pause">
             <img id="playpausebutton" onclick="simstate()" src="images/bluepausedull.svg" alt="" class="icons"/>
             <span class="playPause">Pause</span>
           </li>
 
-          <li class="tool-list">
+          <li class="tool-list" title="Rotate">
            
             <img style="position: relative;height: 32px;" id="rotationbutton" onclick="rotstate()" src="images/bluecwdull.svg" />
             <span class="playPause">Rotate</span>
@@ -110,21 +110,25 @@
             </div>
             
             <div class="canvas__div">
-            
+              <div id="titleincanvas"></div>
+              <div id="commentboxright1" ></div>
                
               <div id="canvas-container">
                 <canvas id="simscreen" height="400px" width="550px"></canvas>
                 <p id="vba">V<sub>ba</sub></p>
                 <p id="vcb">V<sub>cb</sub></p>
                 <p id="vca">V<sub>ca</sub></p>
-
-                <div id="titleincanvas"></div>
+              </div>
+                <!-- <div id="titleincanvas"></div> -->
                 <div id="datatable1" class="datatable"></div>
                 <div id="datatable2" class="datatable"></div>
 
-                <div id="commentboxleft"></div>
-                <div id="commentboxright"></div>
-              </div>
+                <!-- <div class="comments"> -->
+                  <div id="commentboxleft"></div>
+                  <div id="commentboxright"></div>
+                <!-- </div> -->
+                
+             
               
             </div>
           </div>

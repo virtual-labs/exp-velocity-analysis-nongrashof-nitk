@@ -51,7 +51,7 @@ var temp=0;
 function editcss()
 {
 $('.variable').css('padding-top','20px');
-$('#datatable1').css('position','absolute');
+// $('#datatable1').css('position','absolute');
 
 
 
@@ -486,16 +486,32 @@ function checkGrashof()
 	var p=links[1];
 	var q=links[2];
 	var l=links[3];
-	if (s+l>p+q)
-	{ 
-		flaggrashof=false;
-		
-	}
-	else 
-	{
-		flaggrashof=true;
-
-	}
+	
+    if (s+l>p+q)
+      { 
+        flaggrashof=false;
+        document.getElementById("canvas-container").style.display="block";
+        document.getElementById("datatable1").style.display="block";
+        document.getElementById("datatable2").style.visibility = "visible";
+        document.getElementById("titleincanvas").style.visibility = "visible";
+        document.getElementById("commentboxleft").style.visibility = "visible";
+        document.getElementById("commentboxright1").style.visibility = "hidden";
+      }
+      else 
+      {
+        flaggrashof=true;
+        
+         document.getElementById("commentboxright1").style.visibility = "visible";
+         document.getElementById("commentboxright").style.visibility = "hidden";
+         document.getElementById("commentboxright1").innerHTML = 
+             'This simulation is exclusively for non-Grashof Combinations.<br> Please change the slider value</div>';
+         document.getElementById("commentboxleft").style.visibility = "hidden";
+         document.getElementById("titleincanvas").style.visibility = "hidden";
+         document.getElementById("canvas-container").style.display="none";
+         document.getElementById("datatable1").style.display="none";
+         document.getElementById("datatable2").style.visibility = "hidden";
+    
+      }
 }
 
 function dispTables()
@@ -545,19 +561,19 @@ function printcomment(commenttext,commentloc)
   else if(commentloc==1)
   {
   document.getElementById('commentboxright').style.visibility='visible';
-  document.getElementById('commentboxleft').style.width='285px';
+  document.getElementById('commentboxleft').style.width='235px';
   document.getElementById('commentboxleft').innerHTML = commenttext;
   }
   else if(commentloc==2)
   {
   document.getElementById('commentboxright').style.visibility='visible';
-  document.getElementById('commentboxleft').style.width='285px';
+  document.getElementById('commentboxleft').style.width='235px';
   document.getElementById('commentboxright').innerHTML = commenttext;
   }
   else
   {
   document.getElementById('commentboxright').style.visibility='hidden';
-  document.getElementById('entboxleft').style.width='570px';
+  document.getElementById('commentboxleft').style.width='570px';
   document.getElementById('commentboxleft').innerHTML = "<center>please report this issue to adityaraman@gmail.com</center>"; 
   // ignore use of deprecated tag <center> . Code is executed only if printcomment function receives inappropriate commentloc value
   }

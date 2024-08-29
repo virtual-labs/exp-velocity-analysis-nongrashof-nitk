@@ -1,21 +1,24 @@
-
-
-canvas#simscreen2 {
+/* 
+#canvas-container {
+  position: relative;
+} */
+/* canvas#simscreen2 {
   position: absolute;
   left: 30px;
   top: 250px;
   height: 400px;
   width: 550px;
-}
+} */
 
 canvas#simscreen {
   position: absolute;
-  left: 3px;
+  left: 31px;
   top: 86px;
   height: 414px;
   width: 575px;
+  display: block;
 }
-div#commentboxleft {
+/* div#commentboxleft {
   position: absolute;
   left: 18px;
   top: 501px;
@@ -35,18 +38,18 @@ div#commentboxright {
   text-align: right;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
-}
+} */
 
-
+/* 
 .variable {
   position: relative;
   left: 12px;
   padding-top: 10px;
   width: 150px;
-}
+} */
 .varname {
   position: relative;
-  font-size: 1.6rem;
+  font-size: 14px;
   display: inline;
 }
 
@@ -54,7 +57,7 @@ div#commentboxright {
   position: relative;
   top: 1px;
   padding: 0;
-  font-family: sans-serif;
+  font-family:  "Nunito", sans-serif;
   font-size: 1.1em;
   display: inline;
 } 
@@ -123,18 +126,38 @@ div#commentboxright {
   z-index: 100;
   overflow: hidden;
 }
+table,
+td,
+tr,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: max-content;
+  /* padding: 0.5rem; */
+}
+
+td:nth-child(2) {
+  width: 8rem;
+}
 
 .datatable {
-  width: 140px;
-  font-size: 1.6rem;
-  text-align: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
 }
 
-#datatable1{
+/* #datatable1{
   left: 600px;
   top: 50px;
-}
-.datatable table {
+} */
+/* .datatable table {
   border: 1px solid #000011;
   border-collapse: collapse;
   width: 120px;
@@ -151,14 +174,33 @@ div#commentboxright {
   position: relative;
   font-size: 12px;
   left: -10px;
+} */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-
 #titleincanvas {
-  position: absolute;
-  left: 250px;
-  top: 100px;
+  grid-column: 1/-1;
+  justify-self: center;
+  padding: 0.5rem;
 }
 #variables{
   width: 200%;
 }
 
+
+.comments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px dotted black;
+}
+
+#commentboxleft,
+#commentboxright {
+  justify-self: center;
+  font-size: 14px;
+}
