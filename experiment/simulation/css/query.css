@@ -10,7 +10,7 @@ em:current font size
 /* **************************** */
 
 @media (min-width: 1200px) {
-  .datatable {
+  /* .datatable {
     width: 140px;
     font-size: 16px;
     text-align: center;
@@ -36,15 +36,19 @@ em:current font size
     width: 285px;
     font-size: 16px;
     font-weight: normal;
-  }
+  } */
   #variables{
-    width:201%;
+    width:200%;
   }
-  #titleincanvas {
+  .canvas__div {
+    /* grid-template-columns: 1fr; */
+    height: auto;
+  }
+  /* #titleincanvas {
     position: absolute;
     left: 249px;
     top: 60px;
-  }
+  } */
 }
 
 /* **************************** */
@@ -83,11 +87,15 @@ em:current font size
     height: 100%;
    
   }
+  .canvas__div {
+    /* grid-template-columns: 1fr; */
+    height: auto;
+  }
   .div__control img {
     width: 3rem;
     height: 2.8rem;
   }
-  .datatable {
+  /* .datatable {
     width: 140px;
     font-size: 16px;
     text-align: center;
@@ -118,9 +126,9 @@ em:current font size
     width: 285px;
     font-size: 16px;
     font-weight: normal;
-  }
+  } */
   #variables{
-    width:201%;
+    width:200%;
   }
 }
 
@@ -136,11 +144,11 @@ em:current font size
     font-size: 1.4rem;
     flex-direction: column;
   }
-  #titleincanvas {
+  /* #titleincanvas {
     position: absolute;
     left: 289px;
     top: 53px;
-  }
+  } */
 
   .title-div h1 {
     font-size: 2rem;
@@ -200,7 +208,8 @@ em:current font size
     grid-template-columns: 1fr;
   }
   .canvas__div {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    height: auto;
   }
   .canvas {
     display: block;
@@ -209,7 +218,7 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  #datatable1{
+  /* #datatable1{
     left: 601px;
     top: 100px;
     font-weight: normal;
@@ -229,7 +238,7 @@ em:current font size
     width: 285px;
     font-size: 16px;
     font-weight: normal;
-  }
+  } */
   #variables{
     width:100%;
   }
@@ -246,7 +255,7 @@ em:current font size
     grid-template-columns: 1fr;
   }
   .canvas__div {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
   .canvas {
     display: block;
@@ -258,7 +267,7 @@ em:current font size
   .tool-list span {
     font-size: 1.6rem;
   }
-  #datatable1{
+  /* #datatable1{
     left: 459px;
     top: 100px;
     font-weight: normal;
@@ -278,7 +287,7 @@ em:current font size
     width: 285px;
     font-size: 16px;
     font-weight: normal;
-  }
+  } */
   #variables{
     width:100%;
   }
@@ -293,7 +302,7 @@ em:current font size
 /* **************************** */
 @media (max-width: 40em) {
   .canvas__div {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
   .img-div {
     flex-direction: column;
@@ -326,7 +335,7 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  #datatable1{
+  /* #datatable1{
     left: 368px;
     top: 100px;
     font-weight: normal;
@@ -351,7 +360,7 @@ em:current font size
     position: absolute;
     left: 227px;
     top: 52px;
-  }
+  } */
   p{
     margin-bottom: 70px; 
   }
@@ -363,7 +372,7 @@ em:current font size
 /* **************************** */
 @media (max-width: 34em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     gap: 1rem;
   }
 
@@ -420,19 +429,23 @@ em:current font size
   .tooltip {
     font-size: 1rem;
   }
-
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
   #canvas-container {
-    width: 100%;
-    height: 83rem;
+    grid-column: 1/-1;
+    height: 458px;
   }
   .datatable {
-    width: 140px;
-    font-size: 1.6rem;
-    text-align: center;
-    font-weight: normal;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    padding: 0.5rem;
   }
-  
-  #datatable1{
+  .comments {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  /* #datatable1{
     left: 93px;
     top: 465px;
     font-weight: normal;
@@ -454,7 +467,7 @@ em:current font size
     font-weight: normal;
     
     
-  }
+  } */
   label,
   select,
   input,
@@ -466,9 +479,8 @@ em:current font size
     margin-bottom: 60px; 
   }
   #titleincanvas {
-    position: absolute;
-    left: 68px;
-    top: 53px;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
   }
 }
 /* 
