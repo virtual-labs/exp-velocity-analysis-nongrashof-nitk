@@ -10,45 +10,6 @@ em:current font size
 /* **************************** */
 
 @media (min-width: 1200px) {
-  /* .datatable {
-    width: 140px;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  #datatable1{
-    left: 451px;
-    top: 100px;
-    font-weight: normal;
-  }
-  div#commentboxleft {
-    left: 18px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  div#commentboxright {
-    left: 347px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  } */
-  #variables{
-    width:200%;
-  }
-  .canvas__div {
-    /* grid-template-columns: 1fr; */
-    height: auto;
-  }
-  /* #titleincanvas {
-    position: absolute;
-    left: 249px;
-    top: 60px;
-  } */
 }
 
 /* **************************** */
@@ -57,8 +18,8 @@ em:current font size
 
 @media (max-width: 75em) {
   body {
-    width: 100%;
-    margin: unset;
+    max-width: 120rem;
+    margin: 0 auto;
   }
   .title-div h1 {
     font-size: 2.5rem;
@@ -81,12 +42,7 @@ em:current font size
   .tool-list span {
     font-size: 1.2rem;
   }
-  .canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-   
-  }
+
   .canvas__div {
     /* grid-template-columns: 1fr; */
     height: auto;
@@ -95,49 +51,17 @@ em:current font size
     width: 3rem;
     height: 2.8rem;
   }
-  /* .datatable {
-    width: 140px;
-    font-size: 16px;
-    text-align: center;
-  }
-  #titleincanvas {
-    position: absolute;
-    left: 380px;
-    top: 56px;
-  }
-  
-  #datatable1{
-    left: 650px;
-    top: 100px;
-    font-weight: normal;
-  }
-  div#commentboxleft {
-    left: 18px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  div#commentboxright {
-    left: 515px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  } */
-  #variables{
-    width:200%;
-  }
 }
-
 
 /* **************************** */
 /* Below 944px ( Tablets) */
 /* **************************** */
 
 @media (max-width: 59em) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
   .tool-link:link,
   .tool-link:visited {
     gap: 0.5rem;
@@ -169,8 +93,11 @@ em:current font size
     z-index: 101;
     justify-content: space-evenly;
     border-radius: 0;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: auto;
+    margin: 0;
+  }
+  .main {
+    grid-column: 1/-1;
   }
   .tool-menu {
     list-style: none;
@@ -198,12 +125,7 @@ em:current font size
   .main__task-div:nth-child(4) {
     margin-bottom: 6rem;
   }
-  .canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-  
-  }
+
   .main-section {
     grid-template-columns: 1fr;
   }
@@ -211,39 +133,9 @@ em:current font size
     /* grid-template-columns: 1fr; */
     height: auto;
   }
-  .canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-top: 1px solid rgba(177, 176, 176, 0.855);
-  }
-  /* #datatable1{
-    left: 601px;
-    top: 100px;
-    font-weight: normal;
-  }
-  div#commentboxleft {
-    left: 18px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  div#commentboxright {
-    left: 464px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  } */
-  #variables{
-    width:100%;
-  }
-  p{
-    margin-bottom: 65px; 
+
+  p {
+    margin-bottom: 65px;
   }
 }
 
@@ -257,53 +149,20 @@ em:current font size
   .canvas__div {
     /* grid-template-columns: 1fr; */
   }
-  .canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-top: 1px solid rgba(177, 176, 176, 0.855);
-  }
+
   .tool-list span {
     font-size: 1.6rem;
   }
-  /* #datatable1{
-    left: 459px;
-    top: 100px;
-    font-weight: normal;
-  }
-  div#commentboxleft {
-    left: 18px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  div#commentboxright {
-    left: 335px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  } */
-  #variables{
-    width:100%;
-  }
-  p{
-    margin-bottom: 70px; 
+
+  p {
+    margin-bottom: 70px;
   }
 }
-
 
 /* **************************** */
 /* Below 704px (Smaller Tablets) */
 /* **************************** */
 @media (max-width: 40em) {
-  .canvas__div {
-    /* grid-template-columns: 1fr; */
-  }
   .img-div {
     flex-direction: column;
   }
@@ -315,7 +174,7 @@ em:current font size
     width: 0.6rem;
     height: 0.6rem;
   }
- 
+
   .logo-div {
     width: 6.5rem;
   }
@@ -335,65 +194,30 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  /* #datatable1{
-    left: 368px;
-    top: 100px;
-    font-weight: normal;
+
+  p {
+    margin-bottom: 70px;
   }
-  div#commentboxleft {
-    left: 18px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  div#commentboxright {
-    left: 227px;
-    top: 501px;
-    height: 65px;
-    width: 285px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  #titleincanvas {
-    position: absolute;
-    left: 227px;
-    top: 52px;
-  } */
-  p{
-    margin-bottom: 70px; 
-  }
-  
 }
 
 /* **************************** */
 /* Below 540px (Smaller Tablets) */
 /* **************************** */
 @media (max-width: 34em) {
-  .container {
-    /* padding: 0.5rem; */
-    gap: 1rem;
-  }
-
   .title-div h1 {
-  
-
     font-size: 1.6rem;
-   
   }
   .logo-div {
     width: 4.5rem;
   }
   .div__control {
     gap: 2rem;
-  
   }
   .ctrl-icons {
     width: 2.5rem;
     height: 2.5rem;
   }
-  
+
   .tool-menu {
     gap: 1.5rem;
   }
@@ -404,7 +228,7 @@ em:current font size
   .task-title {
     font-size: 1.7rem;
   }
-  
+
   .main {
     gap: 0.5rem;
   }
@@ -420,7 +244,6 @@ em:current font size
     height: 100%;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
-   
   }
   .div__control img {
     width: 2.7rem;
@@ -475,8 +298,8 @@ em:current font size
     display: inline-block;
     font-size: 1.5rem;
   }
-  p{
-    margin-bottom: 60px; 
+  p {
+    margin-bottom: 60px;
   }
   #titleincanvas {
     grid-row: 1/-1;
