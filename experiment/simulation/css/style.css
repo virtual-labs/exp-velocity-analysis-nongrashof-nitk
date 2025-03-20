@@ -374,3 +374,49 @@ h1 {
 .control-sections {
   height: 100%;
 }
+
+table,
+td,
+tr,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+th {
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background2),
+    var(--clr-side-background3)
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: max-content;
+  /* padding: 0.5rem; */
+}
+tr td:nth-child(1) {
+  text-align: center;
+}
+tr td:nth-child(3) {
+  text-align: left;
+  border-left-width: 0;
+  padding-left: 0;
+}
+tr td:nth-child(2),
+tr th:nth-child(2) {
+  text-align: right;
+  border-right-width: 0;
+  width: 8rem;
+}
+
+td.unit,
+th.unit {
+  /* background-color: red; */
+  border-left: 0;
+  padding-left: 0;
+}
